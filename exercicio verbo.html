@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Verbos Regulares</title>
+  <meta charset="utf-8" />
+  <style>
+    body {
+      width: 50%;
+      margin: auto;
+      padding: 15px;
+      background-color: rgb(224, 224, 224);
+    }
+
+    header img {
+      height: 300px;
+      width: 450px;
+      display: block;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      border: 2px solid #ccc;
+    }
+
+    h2 {
+      text-align: center;
+      font-style: italic;
+      text-decoration: underline;
+    }
+
+    button {
+      display: block;
+      margin: auto;
+    }
+
+    button:hover {
+      background-color: rgb(128, 171, 206);
+      transition-property: background-color;
+      transition-duration: .5s;
+      transition-timing-function: cubic-bezier(.33, -0.33, .81, 1.36);
+      ;
+    }
+
+
+    .obs {
+      font-size: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2021/02/verbos-regulares.jpg">
+    <h1>Retonar valores se for verbos ou não</h1>
+  </header>
+  <h2>Exercício de prática para análise de verbos regulares</h2>
+  <div>
+    <br>
+    <label for="nome">Palavra: <em class="required"></em> </label>
+    <input type="text" id="verbo" placeholder="Digite aqui a palavra" autofocus />
+  </div>
+  <br /><br />
+  <button onclick="validar()">Validacao da palavra</button>
+  <br /><br />
+  <button onclick="conjugar()">Conjugar no Passado</button>
+  <br><br><br><br><br><br>
+  <p class="obs">Atenção, para teste usar apenas verbos regulares, caso utilize verbo irregular talvez mostre uma
+    resposta errada</p>
+
+  <script type="text/javascript" src="exercicio verbo.js"></script>
+</body>
+
+</html>
